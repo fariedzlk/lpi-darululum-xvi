@@ -12,18 +12,106 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--foreground);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
+}
+/* =========================
+   HERO ENTRANCE ANIMATION
+========================= */
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-fade {
+  opacity: 0;
+  animation: heroFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
+}
+
+.hero-delay-1 {
+  animation-delay: .15s;
+  animation-fill-mode: both;
+}
+
+.hero-delay-2 {
+  animation-delay: .3s;
+  animation-fill-mode: both;
+}
+
+.hero-delay-3 {
+  animation-delay: .45s;
+  animation-fill-mode: both;
+}
+
+.hero-delay-4 {
+  animation-delay: .6s;
+  animation-fill-mode: both;
+}
+
+.hero-delay-5 {
+  animation-delay: .75s;
+  animation-fill-mode: both;
+}
+/* ===========================
+   Floating Animation
+=========================== */
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float 4s ease-in-out infinite;
+}
+.hero-btn-primary {
+  background: var(--hero-btn-bg);
+}
+
+.hero-btn-primary:hover {
+  background: var(--hero-btn-hover);
+}
+.hero-btn-secondary {
+  color: var(--hero-btn-text);
+  border-color: var(--hero-btn-border);
+}
+
+.hero-btn-secondary:hover {
+  background: var(--hero-btn-hover-bg);
+  color: var(--hero-btn-hover-text);
 }
