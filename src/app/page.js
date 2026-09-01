@@ -1,3 +1,4 @@
+import SplashScreen from "@/components/Landing/SplashScreen";
 import Hero from "@/components/Landing/Hero";
 import Statistics from "@/components/Landing/Statistics";
 import Education from "@/components/Landing/Education";
@@ -11,6 +12,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
+
+    <SplashScreen />
 
     <Navbar />
 

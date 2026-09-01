@@ -30,6 +30,17 @@ html {
 /* =========================
    HERO ENTRANCE ANIMATION
 ========================= */
+@keyframes splashLogo {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
 @keyframes heroFadeUp {
   from {
@@ -50,23 +61,19 @@ html {
 }
 
 .hero-delay-1 {
-  animation-delay: .15s;
-  animation-fill-mode: both;
+  animation-delay: 1.15s;
 }
 
 .hero-delay-2 {
-  animation-delay: .3s;
-  animation-fill-mode: both;
+  animation-delay: 1.3s;
 }
 
 .hero-delay-3 {
-  animation-delay: .45s;
-  animation-fill-mode: both;
+  animation-delay: 1.45s;
 }
 
 .hero-delay-4 {
-  animation-delay: .6s;
-  animation-fill-mode: both;
+  animation-delay: 1.6s;
 }
 
 .hero-delay-5 {

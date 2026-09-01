@@ -1,11 +1,26 @@
+"use client";
 import Image from "next/image";
 import {
   ArrowRight,
   Building2,
   BookOpen,
 } from "lucide-react";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+  const [splashComplete, setSplashComplete] = useState(false);
+
+useEffect(() => {
+  const handleSplashComplete = () => {
+    setSplashComplete(true);
+  };
+
+  window.addEventListener("splashComplete", handleSplashComplete);
+
+  return () => {
+    window.removeEventListener("splashComplete", handleSplashComplete);
+  };
+}, []);
 
 const heroGradient = `
 radial-gradient(
