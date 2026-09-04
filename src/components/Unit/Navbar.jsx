@@ -106,16 +106,20 @@ return (
 ${
   isScrolled
     ? `
-      h-[76px]
-      px-10
+      h-[72px]
+px-5
+xl:h-[76px]
+xl:px-10
       bg-white/90
       backdrop-blur-xl
       border-b border-gray-200/70
       shadow-[0_8px_24px_rgba(15,23,42,.08)]
     `
     : `
-      h-[88px]
-      px-10
+     h-[80px]
+px-5
+xl:h-[88px]
+xl:px-10
       bg-transparent
     `
 }
@@ -127,23 +131,25 @@ ${
               setActiveSection("beranda")
             }
             className="
-              flex
-              items-center
-              gap-4
-              pl-7
-            "
+  flex
+  items-center
+  gap-2.5
+  pl-2
+  xl:gap-4
+  xl:pl-7
+"
           >
             <Image
               src={branding.logo}
               alt={branding.title}
-              width={60}
-              height={60}
-              className="object-contain"
+             width={60}
+height={60}
+className="h-12 w-12 object-contain xl:h-[60px] xl:w-[60px]"
             />
 
             <div className="leading-tight">
 <h1
-  className="text-lg font-bold transition-colors duration-300"
+  className="text-sm font-bold transition-colors duration-300 xl:text-lg"
   style={{
     color: isScrolled ? "#111827" : theme.primary,
   }}
@@ -151,13 +157,13 @@ ${
   {branding.title}
 </h1>
 
-<p className="text-xs text-gray-500">
+<p className="text-[10px] text-gray-500 xl:text-xs">
   {branding.subtitle}
 </p>
         </div>
           </a>
 
-          <div className="flex items-center gap-8 pr-4">
+          <div className="flex items-center gap-4 pl-4 pr-2 xl:gap-8 xl:pl-0 xl:pr-4">
             {menus.map((item) => (
               <a
                 key={item.id}
@@ -167,8 +173,10 @@ ${
                 }
 className={`
   relative
-  font-semibold
-  transition-all
+text-sm
+font-semibold
+transition-all
+xl:text-base
   duration-300
   ease-out
   hover:-translate-y-[1px]
@@ -211,8 +219,10 @@ style={{
   className="
     flex items-center gap-2
     rounded-full
-    px-5
-    py-2.5
+    px-4
+py-2
+xl:px-5
+xl:py-2.5
     font-semibold
     text-white
     shadow-lg
@@ -225,7 +235,7 @@ style={{
     background: theme.primary,
 }}
 >
-  <House size={18} strokeWidth={2.2} />
+  <House size={17} strokeWidth={2.2} />
   <span>Kembali</span>
 </a>
           </div>

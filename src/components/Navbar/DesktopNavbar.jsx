@@ -122,17 +122,17 @@ if (isGalleryPage) {
     >
       <div
         className={`
-          max-w-7xl
-          mx-auto
-          px-6
-          flex
-          justify-between
-          items-center
-          transition-all
-          duration-300
+  max-w-7xl
+  mx-auto
+  px-4 xl:px-6
+  flex
+  justify-between
+  items-center
+  transition-all
+  duration-300
 
-          ${isScrolled ? "h-[78px]" : "h-[82px]"}
-        `}
+  ${isScrolled ? "h-[72px] xl:h-[78px]" : "h-[76px] xl:h-[82px]"}
+`}
       >
         {/* =================================================
             LOGO + BRAND
@@ -143,20 +143,20 @@ if (isGalleryPage) {
             setActiveSection("beranda");
             setIsDropdownOpen(false);
           }}
-          className="flex items-center gap-5 flex-1"
+         className="flex items-center gap-2 md:gap-2.5 xl:gap-5 flex-1 min-w-0"
         >
           <Image
             src="/images/logo/logo-lpi.png"
             alt="Logo LPI Darul Ulum XVI"
             width={55}
             height={55}
-            className="w-12 h-12 md:w-[54px] md:h-[54px] mt-0.5"
+            className="w-10 h-10 md:w-11 md:h-11 xl:w-[54px] xl:h-[54px] mt-0.5"
           />
 
           <div className="flex flex-col leading-tight">
             <h1
               className={`
-                text-lg md:text-xl font-bold
+                text-sm md:text-sm xl:text-xl font-bold whitespace-nowrap
                 transition-colors duration-300
                 ${
                   solid || isScrolled
@@ -169,27 +169,27 @@ if (isGalleryPage) {
             </h1>
 
             <p
-              className={`
-                text-[11px] md:text-xs
-                leading-4
-                mt-0.5
-                transition-colors duration-300
-                ${
-                 solid || isScrolled
-  ? "text-gray-500"
-  : "text-white/80"
-                }
-              `}
-            >
-              Di Bawah Naungan Yayasan Tampojung Al-Baroqah
-            </p>
+  className={`
+    text-[9px] md:text-[9px] xl:text-xs
+    leading-4
+    mt-0.5
+    transition-colors duration-300
+    ${
+      solid || isScrolled
+        ? "text-gray-500"
+        : "text-white/80"
+    }
+  `}
+>
+  Di Bawah Naungan Yayasan Tampojung Al-Baroqah
+</p>
           </div>
         </a>
 
         {/* =================================================
             MENU
         ================================================= */}
-        <div className="hidden md:flex items-center gap-10">
+        <div className="hidden md:flex items-center gap-5 lg:gap-6 xl:gap-10">
 
           {/* BERANDA */}
           <a
@@ -210,6 +210,8 @@ if (isGalleryPage) {
             className={`
               relative
               font-semibold
+              md:text-sm
+              xl:text-base
               transition-all
               duration-300
               drop-shadow-[0_2px_5px_rgba(0,0,0,0.45)]
@@ -266,6 +268,8 @@ if (isGalleryPage) {
                 items-center
                 gap-1
                 font-semibold
+                md:text-sm
+                xl:text-base
                 cursor-pointer
                 transition-all
                 duration-300
@@ -449,6 +453,8 @@ if (isGalleryPage) {
             className={`
               relative
               font-semibold
+              md:text-sm
+              xl:text-base
               transition-all
               duration-300
               drop-shadow-[0_2px_5px_rgba(0,0,0,0.45)]
@@ -507,6 +513,8 @@ if (isGalleryPage) {
             className={`
               relative
               font-semibold
+              md:text-sm
+              xl:text-base
               transition-all
               duration-300
               drop-shadow-[0_2px_5px_rgba(0,0,0,0.45)]
@@ -551,13 +559,13 @@ if (isGalleryPage) {
   href="/spmb"
   className={`
     flex
-    min-w-[140px]
+    min-w-[105px] md:min-w-[110px] xl:min-w-[140px]
     items-center
     justify-center
     rounded-full
-    px-7
-    py-3
-    text-sm
+    px-4 md:px-5 xl:px-7
+    py-2.5 xl:py-
+    text-xs xl:text-sm
     font-semibold
     tracking-[0.12em]
     transition-all

@@ -16,7 +16,7 @@ export default function VisionMission({
   return (
     <section
     id="profil"
-  className=" scroll-mt-28 relative overflow-hidden py-24"
+  className="scroll-mt-28 relative overflow-hidden pt-14 pb-24 sm:py-24"
   style={{
   background: `
     linear-gradient(

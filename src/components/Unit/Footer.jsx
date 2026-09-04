@@ -54,21 +54,23 @@ export default function Footer({
     
 <footer
   id="kontak"
-  className="
-    text-white
-    px-6
-    pt-12
-    pb-2
-    lg:px-10
-    lg:pt-14
-    lg:pb-3
-  "
+className="
+  text-white
+  px-6
+  pt-12
+  pb-2
+  md:px-8
+  md:pt-12
+  md:pb-3
+  xl:px-10
+  xl:pt-14
+"
   style={{
     background: theme.primary,
   }}
 >
   <div className="mx-auto max-w-[1200px]">
-   <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_1.2fr]">
+   <div className="grid gap-10 md:grid-cols-[1.1fr_0.9fr_1.1fr] xl:grid-cols-[1.2fr_0.8fr_1.2fr]">
   <div>
 <Image
   src={theme.branding.logo}

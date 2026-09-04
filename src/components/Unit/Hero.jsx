@@ -22,11 +22,16 @@ export default function Hero({
     scroll-mt-28
     relative
     overflow-hidden
+    h-[clamp(625px,100svh,720px)]
     pt-[88px]
-    pb-[80px]
-    lg:pt-[88px]
-    lg:pb-8
+    pb-[20px]
+    sm:h-auto
+    sm:pt-[88px]
+    sm:pb-[80px]
+    xl:pt-[88px]
+    xl:pb-8
   "
+
   style={{
     background: `linear-gradient(
       180deg,
@@ -77,22 +82,23 @@ export default function Hero({
   }}
 />
 </div>
-  <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+  <div className="relative z-10 max-w-7xl mx-auto px-6 xl:px-8">
 <div className="
-  grid
-  grid-cols-[68%_32%]
-  lg:grid-cols-2
-  gap-6
-  lg:gap-12
-  items-center
-  -translate-x-[10px]
-  lg:translate-x-0
+grid
+grid-cols-[68%_32%]
+sm:grid-cols-[55%_45%]
+xl:grid-cols-2
+gap-6
+lg:gap-12
+items-center
+-translate-x-[10px]
+lg:translate-x-0
 ">
 
 
         {/* LEFT */}
 <div>
-  <div className="max-w-[520px] flex flex-col h-auto lg:h-[560px]">
+  <div className="max-w-[520px] flex flex-col h-auto xl:h-[560px]">
           {/* Breadcrumb */}
            <div className="hero-fade hero-delay-1 flex items-center gap-1.5 text-[11px] sm:text-sm text-gray-500">
             <span>Beranda</span>
@@ -182,9 +188,8 @@ export default function Hero({
     hero-delay-3
     mt-6
     text-[30px]
-sm:text-[36px]
-lg:text-[52px]
-xl:text-[60px]
+    sm:text-[42px]
+    xl:text-[60px]
     font-black
     leading-[1]
     tracking-tight
@@ -195,7 +200,7 @@ xl:text-[60px]
 </h1>         
           {/* CTA */}
           <div className="flex-1" />
-<div className="hero-fade hero-delay-4 relative top-2 mt-4 flex flex-col items-start gap-2.5 sm:top-0 sm:mt-0 sm:flex-row sm:gap-4">
+<div className="hero-fade hero-delay-4 relative top-2 mt-4 flex flex-col items-start gap-2.5 sm:top-0 sm:mt-6 sm:flex-row sm:gap-4">
 
 <a
   href="#program"
@@ -215,7 +220,8 @@ className="
   transition-all
   duration-300
   hover:-translate-y-0.5
-  sm:w-auto
+  sm:min-w-[190px]
+lg:w-auto
   sm:px-6
   sm:py-3.5
   sm:text-base
@@ -247,7 +253,8 @@ className="
   transition-all
   duration-300
   hover:-translate-y-0.5
-  sm:w-auto
+  sm:min-w-[190px]
+lg:w-auto
   sm:px-6
   sm:py-3.5
   sm:text-base
@@ -280,11 +287,11 @@ className="
 <div
   className="
     relative
-    h-[380px]
+h-[380px]
+sm:h-[460px]
+xl:h-[500px]
+xl:w-[500px]
     w-full
-    sm:h-[420px]
-    lg:h-[500px]
-    lg:w-[500px]
   "
 >
 
@@ -301,10 +308,11 @@ className="
   left-1/2
   -translate-x-1/2
   scale-[1.9]
-  lg:scale-100
+sm:scale-[1.05]
+xl:scale-100
   h-[400px]
   sm:h-[430px]
-  lg:h-[500px]
+  xl:h-[500px]
   w-auto
   object-contain
   z-10
@@ -330,18 +338,19 @@ className="
   bottom-0
   left-1/2
   -translate-x-1/2
-  scale-[1.9]
-  lg:scale-100
+scale-[1.9]
+sm:scale-[1.15]
+xl:scale-100
   h-[400px]
   sm:h-[430px]
-  lg:h-[500px]
+  xl:h-[500px]
   w-auto
   object-contain
   drop-shadow-[0_15px_24px_rgba(0,0,0,0.18)]
   z-20
-  lg:left-auto
-  lg:right-4
-  lg:translate-x-0
+ xl:left-auto
+xl:right-4
+xl:translate-x-0
 "
 />
 
