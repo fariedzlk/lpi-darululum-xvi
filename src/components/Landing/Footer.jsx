@@ -63,7 +63,7 @@ export default function Footer() {
   "
 >
   <div className="mx-auto max-w-[1200px]">
-   <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_1.2fr]">
+   <div className="grid gap-10 md:grid-cols-[1.1fr_0.9fr_1.1fr] xl:grid-cols-[1.2fr_0.8fr_1.2fr]">
   <div>
  <Image
   src="/images/logo/logo-lpi.png"
