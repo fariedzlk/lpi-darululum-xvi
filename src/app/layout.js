@@ -15,10 +15,7 @@ const dmSerif = DM_Serif_Display({
 export const metadata = {
   title: "LPI Darul Ulum XVI",
   description: "Website Resmi LPI Darul Ulum XVI",
-  icons: {
-    icon: "/images/logo/logo-lpi.png",
-  },
-};;
+};
 
 export default function RootLayout({ children }) {
   return (
